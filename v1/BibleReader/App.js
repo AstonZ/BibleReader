@@ -12,7 +12,9 @@ import {
   View
 } from 'react-native';
 
-import TestCellPage from './src/pages/AllCellTestPage'
+// import TestCellPage from './src/pages/AllCellTestPage'
+import LoginPage from './src/pages/LoginPage'
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -25,16 +27,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-      <TestCellPage/>
-        {/* <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text> */}
+      <LoginPage/>
       </View>
     );
   }
